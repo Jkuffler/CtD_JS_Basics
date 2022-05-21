@@ -68,7 +68,7 @@ let x = 21.45729.toFixed(2);
 
 // QUESTION 8. Given the variable y as a string, convert it to the an integer with no decimal places. Round down. 
 
-let y = "15.3522";
+let y = Math.floor(parseInt("15.3522"));
 
 
 
