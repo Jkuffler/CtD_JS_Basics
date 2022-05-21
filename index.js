@@ -61,7 +61,7 @@ switch (randomNumber) {
 
 // QUESTION 7. Given the variable x, using JS round it to it's nearest two decimal number on the line immediately below the line that initially sets the x variable. 
 
-let x = 21.45729;
+let x = 21.45729.toFixed(2);
 
 
 
