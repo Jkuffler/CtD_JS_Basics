@@ -28,6 +28,10 @@ let funkyInitials = firstName.toUpperCase(firstName)[firstName.length-1] + ". " 
 
 let isJorge;
 
+if(firstName !== "Jorge") {
+    isJorge = false; 
+  } else isJorge = true;
+
 
 
 //Question 6. Conditional 2 - You are given a randomNumber generator that will create a number between 1 and 3 in the randomNumber variable (do not change this code). Create a condtional where if the randomNumber variable is equal to 1 set theAnswer variable to "perhaps it is so", if randomNumber is equal to 2 set theAnswer variable to "yes, definitely" and if randomNumber is equal to three set theAnswer to "no, never"
