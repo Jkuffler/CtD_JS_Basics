@@ -43,6 +43,20 @@ const randomNumber = Math.floor((Math.random() * 3) + 1);
 
 let theAnswer;
 
+switch (randomNumber) {
+  case 1:
+    theAnswer = "perhaps it is so";
+    break;
+  case 2: 
+    theAnswer = "yes, definitely";
+    break;
+  case 3:
+    theAnswer = "no, never";
+    break;
+  default:
+    theAnswer;
+}
+
 
 
 // QUESTION 7. Given the variable x, using JS round it to it's nearest two decimal number on the line immediately below the line that initially sets the x variable. 
