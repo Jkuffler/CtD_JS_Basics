@@ -87,6 +87,10 @@ let var3 = parseInt(var1) + var2;
 const var4q = 42;
 let var4a;
 
+if(var4q%6 === 0) {
+  var4a = "It is divisble"
+} else var4a = "I am not divisible"
+
 
 
 
