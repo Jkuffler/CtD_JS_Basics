@@ -10,18 +10,18 @@ const homeCountry = "USA";
 
 // QUESTION 2. String Concatenation (Addition) - Add your firstName and lastName variables together and set them equal to the fullName variable as a string. Don't forget to add a space.
 
-const fullName = "Jason " + "C. " + "Küffler";
+const fullName = firstName + ' ' + lastName;
 
 
 
 //QUESTION 3. String Concatenation (Addition) 2. - Create a sentence and set it equal to the mySentence variable that says "My full name is (your fullName variable). I am from (homeCountry)." Try and use template literal notation! For example, if your fullName variable contains the string "John Doe" and your homeCountry variable contains the string "Brazil" it would end up equaling ""My full name is John Doe. I am from Brazil."
 
-const mySentence = `My full name is ${fullName}. I am from ${homeCountry}`; 
+const mySentence = `My full name is ${fullName}. I am from ${homeCountry}.`; 
 
 
 //QUESTION 4. FUNKY INITIALS. Using multiple string methods and your firstName and lastName variables from above (think length, slice, indexOf, charAt, that kind of thing) programmatically place the last letter of your first name and the last letter of your last name into the funkyInitials variable below. Also make sure they are capitalized. Hint: You may want to create new variables as intermediary steps before finally setting or resetting the value of funkyInitials.
 
-let funkyInitials = firstName.toUpperCase(firstName)[firstName.length-1] + ". " + lastName.toUpperCase(lastName)[lastName.length-1] + "."
+let funkyInitials = firstName.toUpperCase(firstName)[firstName.length-1]  + lastName.toUpperCase(lastName)[lastName.length-1]
 
 
 // QUESTION 5. Conditional 1 - We've had, and have, a lot of developers named Jorge at Code the Dream.  So now we want to check programatically to see if you are the newest Jorge passing through the halls of CtD. Create an if/else statement that sets the variable isJorge to true if your firstName variable is "Jorge" and false if it is anything else.  
@@ -61,7 +61,7 @@ switch (randomNumber) {
 
 // QUESTION 7. Given the variable x, using JS round it to it's nearest two decimal number on the line immediately below the line that initially sets the x variable. 
 
-let x = 21.45729.toFixed(2);
+let x = ( Math.round(21.45729 * 100) ) / 100;
 
 
 
@@ -87,9 +87,9 @@ let var3 = parseInt(var1) + var2;
 const var4q = 42;
 let var4a;
 
-if(var4q%6 === 0) {
-  var4a = "It is divisble"
-} else var4a = "I am not divisible"
+if( var4q % 6 === 0) {
+  var4a = "It is divisible."
+} else var4a = "I am not divisible."
 
 
 
