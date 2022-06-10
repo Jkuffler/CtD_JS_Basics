@@ -63,12 +63,24 @@ switch (randomNumber) {
 
 let x = ( Math.round(21.45729 * 100) ) / 100;
 
+//toFixed() is also a great option
+/* 
+let x = 21.45729;
+x = Number(x.toFixed(2));
+*/
 
 
 
 // QUESTION 8. Given the variable y as a string, convert it to the an integer with no decimal places. Round down. 
 
 let y = Math.floor(parseInt("15.3522"));
+
+
+/*     OR
+let y = "15.3522";
+y = Math.floor(y);
+console.log("y now equals:", y);
+*/
 
 
 
@@ -80,6 +92,10 @@ const var2 = 18;
 
 //code here
 let var3 = parseInt(var1) + var2; 
+
+/* OR 
+let var3 = Number(var1) + var2;
+*/ 
 
 
 //QUESTION 10 - MODULUS/REMAINDER and some other JS. If the variable var4q is divisible by exactly 6 then have the variable var4a set to the string "It is divisible." If it is not divisible by 6 then set it to the string. "I am not divisible."
